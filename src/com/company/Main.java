@@ -3,6 +3,13 @@ package com.company;
 import com.company.sorting.BubbleSort;
 import com.company.sorting.selectionSort;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.company.Files.Arrays.FindMissing.find_missing;
+import static com.company.Files.Arrays.FindMissing.test;
+
 public class Main {
 
     public static void main(String args[])
@@ -21,8 +28,8 @@ public class Main {
 //        System.out.println("selectionSorted array");
 //        ob1.printArray(arr2);
 
-
-
-
+        for (int n = 0; n < 10; ++n)
+            test(10);
+     
     }
 }
