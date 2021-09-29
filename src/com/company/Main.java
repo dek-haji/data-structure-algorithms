@@ -1,14 +1,9 @@
 package com.company;
 
-import com.company.sorting.BubbleSort;
-import com.company.sorting.selectionSort;
+import java.util.Random;
 
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.company.Files.Arrays.FindMissing.find_missing;
 import static com.company.Files.Arrays.FindMissing.test;
+import static java.lang.Math.random;
 
 public class Main {
 
@@ -30,6 +25,16 @@ public class Main {
 
         for (int n = 0; n < 10; ++n)
             test(10);
-     
+
+
+        //learning the random.nextInt method
+        // create random object
+        Random ran = new Random();
+        // generating integer
+        int nxt = ran.nextInt();
+
+        // Printing the random Number
+        System.out.println
+                ("The Randomly generated integer is : " + nxt);
     }
 }
