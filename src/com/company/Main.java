@@ -1,9 +1,8 @@
 package com.company;
 
-import java.util.Random;
+import java.util.*;
 
 import static com.company.Files.Arrays.FindMissing.test;
-import static java.lang.Math.random;
 
 public class Main {
 
@@ -28,13 +27,25 @@ public class Main {
 
 
         //learning the random.nextInt method
-        // create random object
-        Random ran = new Random();
-        // generating integer
-        int nxt = ran.nextInt(10);
+//        // create random object
+//        Random ran = new Random();
+//        // generating integer
+//        int nxt = ran.nextInt(10);
+//
+//        // Printing the random Number
+//        System.out.println
+//                ("The Randomly generated integer is : " + nxt);
 
-        // Printing the random Number
-        System.out.println
-                ("The Randomly generated integer is : " + nxt);
+
+        //learning the hashset
+        // creating and initializing an array (of non
+        // primitive type)
+        Integer arr[] = {6, 4,1, 2, 3, 4, 5};
+        // Set demonstration using HashSet Constructor
+        Set<Integer> set = new HashSet<>(Arrays.asList(arr));
+        System.out.println(set + "Hashset don't take duplicates");
+
+        TreeSet<Integer> treeSet = new TreeSet<Integer>(Arrays.asList(arr));
+        System.out.println(treeSet + "TReeset don't take duplicates");
     }
 }
