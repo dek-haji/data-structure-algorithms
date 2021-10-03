@@ -31,7 +31,7 @@ public class Main {
         // create random object
         Random ran = new Random();
         // generating integer
-        int nxt = ran.nextInt();
+        int nxt = ran.nextInt(10);
 
         // Printing the random Number
         System.out.println
