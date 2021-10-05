@@ -47,5 +47,16 @@ public class Main {
 
         TreeSet<Integer> treeSet = new TreeSet<Integer>(Arrays.asList(arr));
         System.out.println(treeSet + "TReeset don't take duplicates");
+//creating treeset of strings
+        String Phrases = "let me join you the coffee the shop";
+        String[] phraseList = Phrases.split("");
+
+        TreeSet<String> words = new TreeSet<>();
+        words.addAll(Arrays.asList(phraseList));
+        for(String w : words)
+        {
+            System.out.println(w);
+        }
+
     }
 }
